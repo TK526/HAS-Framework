@@ -7,5 +7,6 @@
 * TODO#006: Fill NetworkConnectionFactory.class
 * TODO#007: Fill Database.class
 * TODO#008: Fill DatabaseSession.class
-* TODO#008: Create Options.clas
-* TODO#008: Create Notification.clas
+* TODO#009: Create Options.clas
+* TODO#010: Create Notification.clas
+* TODO#011: Update the wiki page according to CommandName.class
