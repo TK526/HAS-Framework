@@ -24,7 +24,7 @@ public class DataContainer implements Iterable
         public DataIterator( DataContainer dc )
         {
             index = 0;
-            structure = dc;
+            this.dc = dc;
         }
 
         @Override
