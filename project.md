@@ -10,3 +10,4 @@
 * TODO#009: Create Options.class
 * TODO#010: Create Notification.class
 * TODO#011: Update the wiki page according to CommandName.class
+* TODO#012: Write all the javadoc
