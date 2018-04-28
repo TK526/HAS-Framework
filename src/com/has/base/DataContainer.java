@@ -11,7 +11,7 @@ import java.util.Iterator;
  * @since 28.04.2018 00:31
  * @version 1.0
  */
-public class DataContainer implements Iterable, Serializable
+public class DataContainer implements Iterable<Object>, Serializable
 {
     public static final long serialVersionUID = 49L;
 
@@ -26,7 +26,7 @@ public class DataContainer implements Iterable, Serializable
      * @since 28.04.2018 08:22
      * @version 1.0
      */
-    private class DataIterator implements Iterator
+    private class DataIterator implements Iterator<Object>
     {
         DataContainer dc;
         int index;

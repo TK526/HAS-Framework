@@ -55,7 +55,7 @@ public class Notification implements Serializable
      */
     public Notification( String title, String description, String iconName, Priority priority )
     {
-        super( title, description, iconName, new TimeStamp( System.currentTimeMillis() ), priority );
+        this( title, description, iconName, new Timestamp( System.currentTimeMillis() ), priority );
     }
 
     /**

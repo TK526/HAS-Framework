@@ -24,7 +24,7 @@ public class DataStructure implements Serializable
     {
         types = new DataType[ size ];
 
-        for ( int i = 0; i < max; i++ )
+        for ( int i = 0; i < this.size(); i++ )
             types[ i ] = type;
     }
 
@@ -35,7 +35,7 @@ public class DataStructure implements Serializable
     public DataStructure( DataType type1 )
     {
         types = new DataType[]{ 
-            new DataType( type1 ) };
+            type1 };
     }
 
     /**
@@ -46,8 +46,8 @@ public class DataStructure implements Serializable
     public DataStructure( DataType type1, DataType type2 )
     {
         types = new DataType[]{ 
-            new DataType( type1 ), 
-            new DataType( type2 ) };
+            type1, 
+            type2 };
     }
 
     /**
@@ -59,9 +59,9 @@ public class DataStructure implements Serializable
     public DataStructure( DataType type1, DataType type2, DataType type3 )
     {
         types = new DataType[]{ 
-            new DataType( type1 ), 
-            new DataType( type2 ),
-            new DataType( type3 ) };
+            type1, 
+            type2,
+            type3 };
     }
 
     /**
@@ -74,10 +74,10 @@ public class DataStructure implements Serializable
     public DataStructure( DataType type1, DataType type2, DataType type3, DataType type4 )
     {
         types = new DataType[]{ 
-            new DataType( type1 ), 
-            new DataType( type2 ),
-            new DataType( type3 ),
-            new DataType( type4 ) };
+            type1, 
+            type2,
+            type3,
+            type4 };
     }
 
     /**
@@ -91,11 +91,11 @@ public class DataStructure implements Serializable
     public DataStructure( DataType type1, DataType type2, DataType type3, DataType type4, DataType type5 )
     {
         types = new DataType[]{ 
-            new DataType( type1 ), 
-            new DataType( type2 ),
-            new DataType( type3 ),
-            new DataType( type4 ),
-            new DataType( type5 ) };
+            type1, 
+            type2,
+            type3,
+            type4,
+            type5 };
     }
 
     /**
@@ -110,12 +110,12 @@ public class DataStructure implements Serializable
     public DataStructure( DataType type1, DataType type2, DataType type3, DataType type4, DataType type5, DataType type6 )
     {
         types = new DataType[]{ 
-            new DataType( type1 ), 
-            new DataType( type2 ),
-            new DataType( type3 ),
-            new DataType( type4 ),
-            new DataType( type5 ),
-            new DataType( type6 ) };
+            type1, 
+            type2,
+            type3,
+            type4,
+            type5,
+            type6 };
     }
 
     /**
@@ -131,13 +131,13 @@ public class DataStructure implements Serializable
     public DataStructure( DataType type1, DataType type2, DataType type3, DataType type4, DataType type5, DataType type6, DataType type7 )
     {
         types = new DataType[]{ 
-            new DataType( type1 ), 
-            new DataType( type2 ),
-            new DataType( type3 ),
-            new DataType( type4 ),
-            new DataType( type5 ),
-            new DataType( type6 ),
-            new DataType( type7 ) };
+            type1, 
+            type2,
+            type3,
+            type4,
+            type5,
+            type6,
+            type7 };
     }
 
     /**
@@ -154,14 +154,14 @@ public class DataStructure implements Serializable
     public DataStructure( DataType type1, DataType type2, DataType type3, DataType type4, DataType type5, DataType type6, DataType type7, DataType type8 )
     {
         types = new DataType[]{ 
-            new DataType( type1 ), 
-            new DataType( type2 ),
-            new DataType( type3 ),
-            new DataType( type4 ),
-            new DataType( type5 ),
-            new DataType( type6 ),
-            new DataType( type7 ),
-            new DataType( type8 ) };
+            type1, 
+            type2,
+            type3,
+            type4,
+            type5,
+            type6,
+            type7,
+            type8 };
     }
 
     /**
@@ -189,7 +189,7 @@ public class DataStructure implements Serializable
      */
     public void merge( DataStructure structure )
     {
-        DataType[] tmp = new Datatype[ this.size() + structure.size() ];
+        DataType[] tmp = new DataType[ this.size() + structure.size() ];
 
         for ( int i = 0; i < this.size(); i++ )
             tmp[ i ] = this.types[ i ];
